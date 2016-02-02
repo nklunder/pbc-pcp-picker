@@ -1,0 +1,20 @@
+#logo { background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important; }
+#content-promotional { font-size: 85%; }
+#content-promotional > div {
+  padding: 12px;
+  border-top: 5px solid;
+  margin-bottom: 20px; }
+#content-promotional > div:first-child  { border-top-color: #006bb7; }
+#content-promotional > div:nth-child(2) { border-top-color: #f2ce30; }
+#content-promotional > div:nth-child(3) { border-top-color: #92b638; }
+
+/* Addresses the issue where Ektron's ULs cause actual page content ULs to get
+   the secondary 'circle' style applied instead of the normal 'disc' style.
+   These rules shift the styling of ULs one level down so page content displays
+   correctly. */
+[id^='ctl'] li li { list-style-type: disc; }
+[id^='ctl'] li li li { list-style-type: circle; }
+[id^='ctl'] li li li li { list-style-type: square; }
+
+.icon-facebook2:hover { color: #3B5998; }
+.icon-youtube:hover { color: #E52D27; }
